@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="3" ignored="4" total="19" passed="12" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-09T22:42:56 ART" name="Homework06-01" finished-at="2022-10-09T22:43:41 ART" duration-ms="44322">
+    <groups>
+      <group name="survey">
+        <method signature="TestSurvey.goToSurvey()[pri:0, instance:Homework06.Tests.TestSurvey@6d7fc27]" name="goToSurvey" class="Homework06.Tests.TestSurvey"/>
+        <method signature="TestSurvey.assertQuestions()[pri:0, instance:Homework06.Tests.TestSurvey@6d7fc27]" name="assertQuestions" class="Homework06.Tests.TestSurvey"/>
+        <method signature="TestSurvey.answerQuestions()[pri:0, instance:Homework06.Tests.TestSurvey@6d7fc27]" name="answerQuestions" class="Homework06.Tests.TestSurvey"/>
+        <method signature="TestSurvey.submitSurvey()[pri:0, instance:Homework06.Tests.TestSurvey@6d7fc27]" name="submitSurvey" class="Homework06.Tests.TestSurvey"/>
+      </group> <!-- survey -->
+      <group name="digitalCollection">
+        <method signature="TestDigitalCollection.assertDigitalCollection()[pri:0, instance:Homework06.Tests.TestDigitalCollection@16aa8654]" name="assertDigitalCollection" class="Homework06.Tests.TestDigitalCollection"/>
+        <method signature="TestDigitalCollection.searchBox(java.lang.String)[pri:0, instance:Homework06.Tests.TestDigitalCollection@16aa8654]" name="searchBox" class="Homework06.Tests.TestDigitalCollection"/>
+      </group> <!-- digitalCollection -->
+      <group name="homePage">
+        <method signature="TestHomePage.assertUrl()[pri:0, instance:Homework06.Tests.TestHomePage@59d4cd39]" name="assertUrl" class="Homework06.Tests.TestHomePage"/>
+        <method signature="TestHomePage.testSlider()[pri:1, instance:Homework06.Tests.TestHomePage@59d4cd39]" name="testSlider" class="Homework06.Tests.TestHomePage"/>
+        <method signature="TestHomePage.testTopSearchs(java.util.List)[pri:1, instance:Homework06.Tests.TestHomePage@59d4cd39]" name="testTopSearchs" class="Homework06.Tests.TestHomePage"/>
+        <method signature="TestHomePage.testGoToDigitalColletions()[pri:1, instance:Homework06.Tests.TestHomePage@59d4cd39]" name="testGoToDigitalColletions" class="Homework06.Tests.TestHomePage"/>
+      </group> <!-- homePage -->
+    </groups>
+    <test started-at="2022-10-09T22:42:56 ART" name="Homework06" finished-at="2022-10-09T22:43:41 ART" duration-ms="44322">
+      <class name="Homework06.Tests.TestHomePage">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Homework06.Tests.TestHomePage@59d4cd39]" started-at="2022-10-09T22:42:56 ART" name="setUp" finished-at="2022-10-09T22:43:00 ART" duration-ms="3651" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="startApp()[pri:0, instance:Homework06.Tests.TestHomePage@59d4cd39]" started-at="2022-10-09T22:43:00 ART" name="startApp" finished-at="2022-10-09T22:43:06 ART" duration-ms="5943" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method signature="assertUrl()[pri:0, instance:Homework06.Tests.TestHomePage@59d4cd39]" started-at="2022-10-09T22:43:06 ART" name="assertUrl" finished-at="2022-10-09T22:43:06 ART" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertUrl -->
+        <test-method retried="true" signature="testSlider()[pri:1, instance:Homework06.Tests.TestHomePage@59d4cd39]" started-at="2022-10-09T22:43:06 ART" name="testSlider" finished-at="2022-10-09T22:43:08 ART" duration-ms="2177" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'4/4')]"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-092J5ON', ip: '192.168.0.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac25cd85ac80283baf8e54eca2b76193, findElement {using=xpath, value=//div[contains(text(),'4/4')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Joaco\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58633}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58633/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ac25cd85ac80283baf8e54eca2b76193]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'4/4')]"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-092J5ON', ip: '192.168.0.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac25cd85ac80283baf8e54eca2b76193, findElement {using=xpath, value=//div[contains(text(),'4/4')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Joaco\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58633}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58633/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ac25cd85ac80283baf8e54eca2b76193
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at Homework06.Pages.BasePage.find(BasePage.java:19)
+at Homework06.Pages.LocHomePage.sliderLastPage(LocHomePage.java:29)
+at Homework06.Tests.TestHomePage.testSlider(TestHomePage.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSlider -->
+        <test-method retried="true" signature="testSlider()[pri:1, instance:Homework06.Tests.TestHomePage@59d4cd39]" started-at="2022-10-09T22:43:08 ART" name="testSlider" finished-at="2022-10-09T22:43:10 ART" duration-ms="2101" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'4/4')]"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-092J5ON', ip: '192.168.0.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac25cd85ac80283baf8e54eca2b76193, findElement {using=xpath, value=//div[contains(text(),'4/4')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Joaco\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58633}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58633/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ac25cd85ac80283baf8e54eca2b76193]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'4/4')]"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-092J5ON', ip: '192.168.0.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac25cd85ac80283baf8e54eca2b76193, findElement {using=xpath, value=//div[contains(text(),'4/4')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Joaco\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58633}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58633/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ac25cd85ac80283baf8e54eca2b76193
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at Homework06.Pages.BasePage.find(BasePage.java:19)
+at Homework06.Pages.LocHomePage.sliderLastPage(LocHomePage.java:29)
+at Homework06.Tests.TestHomePage.testSlider(TestHomePage.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSlider -->
+        <test-method retried="true" signature="testSlider()[pri:1, instance:Homework06.Tests.TestHomePage@59d4cd39]" started-at="2022-10-09T22:43:10 ART" name="testSlider" finished-at="2022-10-09T22:43:13 ART" duration-ms="2111" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'4/4')]"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-092J5ON', ip: '192.168.0.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac25cd85ac80283baf8e54eca2b76193, findElement {using=xpath, value=//div[contains(text(),'4/4')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Joaco\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58633}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58633/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ac25cd85ac80283baf8e54eca2b76193]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'4/4')]"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-092J5ON', ip: '192.168.0.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac25cd85ac80283baf8e54eca2b76193, findElement {using=xpath, value=//div[contains(text(),'4/4')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Joaco\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58633}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58633/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ac25cd85ac80283baf8e54eca2b76193
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at Homework06.Pages.BasePage.find(BasePage.java:19)
+at Homework06.Pages.LocHomePage.sliderLastPage(LocHomePage.java:29)
+at Homework06.Tests.TestHomePage.testSlider(TestHomePage.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSlider -->
+        <test-method signature="testSlider()[pri:1, instance:Homework06.Tests.TestHomePage@59d4cd39]" started-at="2022-10-09T22:43:13 ART" name="testSlider" finished-at="2022-10-09T22:43:15 ART" duration-ms="2100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSlider -->
+        <test-method signature="testTopSearchs(java.util.List)[pri:1, instance:Homework06.Tests.TestHomePage@59d4cd39]" started-at="2022-10-09T22:43:15 ART" name="testTopSearchs" data-provider="top searchs" finished-at="2022-10-09T22:43:15 ART" depends-on-methods="Homework06.Tests.TestHomePage.testSlider" duration-ms="270" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Civil War, WPA, National Parks, Dust Bowl, Maps, Ukraine]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTopSearchs -->
+        <test-method signature="testGoToDigitalColletions()[pri:1, instance:Homework06.Tests.TestHomePage@59d4cd39]" started-at="2022-10-09T22:43:15 ART" name="testGoToDigitalColletions" finished-at="2022-10-09T22:43:18 ART" depends-on-methods="Homework06.Tests.TestHomePage.testSlider, Homework06.Tests.TestHomePage.testTopSearchs, Homework06.Tests.TestHomePage.assertUrl" duration-ms="2527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoToDigitalColletions -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Homework06.Tests.TestHomePage@59d4cd39]" started-at="2022-10-09T22:43:41 ART" name="tearDown" finished-at="2022-10-09T22:43:41 ART" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Homework06.Tests.TestHomePage -->
+      <class name="Homework06.Tests.TestSurvey">
+        <test-method is-config="true" signature="startApp()[pri:0, instance:Homework06.Tests.TestSurvey@6d7fc27]" started-at="2022-10-09T22:43:33 ART" name="startApp" finished-at="2022-10-09T22:43:34 ART" duration-ms="667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method signature="goToSurvey()[pri:0, instance:Homework06.Tests.TestSurvey@6d7fc27]" started-at="2022-10-09T22:43:34 ART" name="goToSurvey" depends-on-groups="digitalCollection" finished-at="2022-10-09T22:43:34 ART" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToSurvey -->
+        <test-method signature="assertQuestions()[pri:0, instance:Homework06.Tests.TestSurvey@6d7fc27]" started-at="2022-10-09T22:43:34 ART" name="assertQuestions" depends-on-groups="digitalCollection" finished-at="2022-10-09T22:43:39 ART" depends-on-methods="Homework06.Tests.TestSurvey.goToSurvey" duration-ms="4726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertQuestions -->
+        <test-method signature="answerQuestions()[pri:0, instance:Homework06.Tests.TestSurvey@6d7fc27]" started-at="2022-10-09T22:43:39 ART" name="answerQuestions" depends-on-groups="digitalCollection" finished-at="2022-10-09T22:43:39 ART" depends-on-methods="Homework06.Tests.TestSurvey.goToSurvey, Homework06.Tests.TestSurvey.assertQuestions" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- answerQuestions -->
+        <test-method signature="submitSurvey()[pri:0, instance:Homework06.Tests.TestSurvey@6d7fc27]" started-at="2022-10-09T22:43:39 ART" name="submitSurvey" depends-on-groups="digitalCollection" finished-at="2022-10-09T22:43:41 ART" depends-on-methods="Homework06.Tests.TestSurvey.answerQuestions" duration-ms="1739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitSurvey -->
+      </class> <!-- Homework06.Tests.TestSurvey -->
+      <class name="Homework06.Tests.TestDigitalCollection">
+        <test-method is-config="true" signature="startApp()[pri:0, instance:Homework06.Tests.TestDigitalCollection@16aa8654]" started-at="2022-10-09T22:43:18 ART" name="startApp" finished-at="2022-10-09T22:43:18 ART" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method signature="assertDigitalCollection()[pri:0, instance:Homework06.Tests.TestDigitalCollection@16aa8654]" started-at="2022-10-09T22:43:18 ART" name="assertDigitalCollection" depends-on-groups="homePage" finished-at="2022-10-09T22:43:18 ART" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertDigitalCollection -->
+        <test-method signature="searchBox(java.lang.String)[pri:0, instance:Homework06.Tests.TestDigitalCollection@16aa8654]" started-at="2022-10-09T22:43:18 ART" name="searchBox" data-provider="search list" depends-on-groups="homePage" finished-at="2022-10-09T22:43:25 ART" duration-ms="7407" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abraham Lincoln]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBox -->
+        <test-method signature="searchBox(java.lang.String)[pri:0, instance:Homework06.Tests.TestDigitalCollection@16aa8654]" started-at="2022-10-09T22:43:25 ART" name="searchBox" data-provider="search list" depends-on-groups="homePage" finished-at="2022-10-09T22:43:30 ART" duration-ms="4516" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Benjamin Franklin Papers]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBox -->
+        <test-method signature="searchBox(java.lang.String)[pri:0, instance:Homework06.Tests.TestDigitalCollection@16aa8654]" started-at="2022-10-09T22:43:30 ART" name="searchBox" data-provider="search list" depends-on-groups="homePage" finished-at="2022-10-09T22:43:33 ART" duration-ms="3664" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Earth Day]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBox -->
+      </class> <!-- Homework06.Tests.TestDigitalCollection -->
+    </test> <!-- Homework06 -->
+  </suite> <!-- Homework06-01 -->
+</testng-results>

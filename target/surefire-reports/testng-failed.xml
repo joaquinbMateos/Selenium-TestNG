@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="Homework06.Tests.TestDigitalCollection">
+        <methods>
+          <include name="startApp"/>
+          <include name="assertDigitalCollection"/>
+          <include name="searchBox"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Homework06.Tests.TestDigitalCollection -->
+      <class name="Homework06.Tests.TestSurvey">
+        <methods>
+          <include name="goToSurvey"/>
+          <include name="assertQuestions"/>
+          <include name="submitSurvey"/>
+          <include name="answerQuestions"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="startApp"/>
+        </methods>
+      </class> <!-- Homework06.Tests.TestSurvey -->
+      <class name="Homework06.Tests.TestHomePage">
+        <methods>
+          <include name="assertUrl"/>
+          <include name="testTopSearchs"/>
+          <include name="testGoToDigitalColletions"/>
+          <include name="startApp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testSlider"/>
+        </methods>
+      </class> <!-- Homework06.Tests.TestHomePage -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

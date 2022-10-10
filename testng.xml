@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Homework06-01">
+    <parameter name="browser" value="CHROME"/>
+    <test name="Homework06">
+        <groups>
+            <dependencies>
+                <group depends-on= "homePage" name= "digitalCollection"></group>
+                <group depends-on= "digitalCollection" name= "survey"></group>
+            </dependencies>
+        </groups>
+        <classes>
+            <class name="Homework06.Tests.TestHomePage"/>
+            <class name="Homework06.Tests.TestDigitalCollection"/>
+            <class name="Homework06.Tests.TestSurvey"></class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

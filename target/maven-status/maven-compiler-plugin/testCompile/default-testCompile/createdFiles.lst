@@ -1,0 +1,12 @@
+Homework06\Pages\BasePage.class
+Homework06\Pages\LocHomePage.class
+Homework06\Tests\TestHomePage.class
+Homework06\Tests\TestDigitalCollection.class
+Homework06\Pages\DigitalCollectionPage.class
+Homework06\Pages\SurveyPage.class
+Homework06\Utilities\DriverFactory.class
+Homework06\Utilities\ListenerTest.class
+Homework06\Tests\TestSurvey.class
+Homework06\Tests\BaseTest.class
+Homework06\Utilities\BrowserType.class
+Homework06\Utilities\Retry.class
